@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{9fbf200f-9375-43e2-931d-c013124f4a22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Private">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Sources\Public">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Sources\pch">
+      <UniqueIdentifier>{04f3f1fd-a065-47d7-9f45-e72d287dbc9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Icons">
+      <UniqueIdentifier>{a99ef749-a5c8-4f31-8690-242751f34868}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Images">
+      <UniqueIdentifier>{922bd373-5c12-4bf4-b103-3b3b1aeece25}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\WinMain.cpp">
+      <Filter>Sources\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Board.cpp">
+      <Filter>Sources\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Player.cpp">
+      <Filter>Sources\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\AIPlayer.cpp">
+      <Filter>Sources\Private</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\pch.h">
+      <Filter>Sources\pch</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Board.h">
+      <Filter>Sources\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Player.h">
+      <Filter>Sources\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WinMain.h">
+      <Filter>Sources\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\AIPlayer.h">
+      <Filter>Sources\Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Reversi.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Icons\MainIcon.ico">
+      <Filter>Resources\Icons</Filter>
+    </Image>
+    <Image Include="Assets\Images\board.bmp">
+      <Filter>Resources\Images</Filter>
+    </Image>
+    <Image Include="Assets\Images\boardNumbered.bmp">
+      <Filter>Resources\Images</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
