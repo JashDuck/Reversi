@@ -75,7 +75,6 @@ void MainWindow::GameOver() {
     if (response == IDYES) {
         board.reset();
         player1Turn = true;
-        gameOver = false;
         InvalidateRect(hWnd, NULL, TRUE);
     } else {
         PostQuitMessage(0);
@@ -132,6 +131,15 @@ LRESULT MainWindow::WindowProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lP
                 case ID_BOARD_NUMBERED:
                     board.useNumberedBackground = true;
                     break;
+                case ID_DIFFICULTY_EASY:
+                    difficulty = Difficulty::EASY;
+                    break;
+                case ID_DIFFICULTY_MEDIUM:
+                    difficulty = Difficulty::MEDIUM;
+                    break;
+                case ID_DIFFICULTY_HARD:
+                    difficulty = Difficulty::HARD;
+                    break;
             }
 
             InvalidateRect(hWnd, NULL, true);
@@ -146,7 +154,6 @@ LRESULT MainWindow::WindowProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lP
             board.Draw(hdc, rect);
 
             if (!player1.HasValidMove(board) && !player2.HasValidMove(board)) {
-                gameOver = true;
                 GameOver();
             }
 
@@ -162,16 +169,15 @@ LRESULT MainWindow::WindowProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lP
                 // Player 1 move
                 if (player1.HasValidMove(board)) {
                     if (player1.MouseHandler(board, hWnd, rect, LOWORD(lParam), HIWORD(lParam))) {
-                        InvalidateRect(hWnd, NULL, TRUE);
+                        InvalidateRect(hWnd, NULL, true);
                         UpdateWindow(hWnd);
 
                         std::this_thread::sleep_for(std::chrono::milliseconds(1000));
-                        if (gameOver) break;
 
                         // AI move
                         if (player2.HasValidMove(board)) {
-                            player2.move(board, hWnd);
-                            InvalidateRect(hWnd, NULL, TRUE);
+                            player2.move(board, hWnd, difficulty);
+                            InvalidateRect(hWnd, NULL, true);
                             UpdateWindow(hWnd);
                         }
                     }

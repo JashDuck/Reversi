@@ -19,3 +19,15 @@ enum class BoardValue {
 	BLACK,
 	WHITE,
 };
+
+enum class Difficulty {
+	EASY,
+	MEDIUM,
+	HARD
+};
+
+const int directions[8][2] = {
+	{-1,  1}, { 1,  1}, { 0,  1},
+	{-1,  0},           { 1,  0},
+	{-1, -1}, { 0, -1}, { 1, -1},
+};

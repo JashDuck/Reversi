@@ -41,17 +41,10 @@ int AIPlayer::CountFlipsInDirection(const Board& board, int x, int y, int dx, in
     return 0;
 }
 
-int AIPlayer::SimulateMoveAndCountFlips(const Board& board, int x, int y) {
-    if (board.boardState[x][y] != BoardValue::EMPTY) {
-        return 0;
-    }
+int AIPlayer::SimulateMove(const Board& board, int x, int y) {
+    if (board.boardState[x][y] != BoardValue::EMPTY) { return 0; }
 
     int totalFlips = 0;
-
-    int directions[8][2] = {
-        { 1,  0}, {-1,  0}, { 0,  1}, { 0, -1},
-        { 1,  1}, {-1, -1}, { 1, -1}, {-1,  1}
-    };
 
     for (int i = 0; i < 8; i++) {
         totalFlips += CountFlipsInDirection(board, x, y, directions[i][0], directions[i][1]);
@@ -60,36 +53,44 @@ int AIPlayer::SimulateMoveAndCountFlips(const Board& board, int x, int y) {
     return totalFlips;
 }
 
-int AIPlayer::EvaluateMove(Board& board, int x, int y) {
-    Board boardCopy = board;
-    int piecesFlipped = SimulateMoveAndCountFlips(boardCopy, x, y);
-    return piecesFlipped;
-}
-
-std::pair<int, int> AIPlayer::ChooseBestMove(const Board& board) {
+std::pair<int, int> AIPlayer::ChooseMostPieces(const Board& board, std::vector<std::pair<int, int>> validMoves) {
     std::pair<int, int> bestMove = { -1, -1 };
     int bestScore = -1;
 
-    for (int x = 0; x < Board::MATRIX_SIZE; x++) {
-        for (int y = 0; y < Board::MATRIX_SIZE; y++) {
-            int score = SimulateMoveAndCountFlips(board, x, y);
-            if (score > bestScore) {
-                bestScore = score;
-                bestMove = { x, y };
-            }
+    for (const std::pair<int, int>& move : validMoves) {
+        int score = SimulateMove(board, move.first, move.second);
+        if (score > bestScore) {
+            bestScore = score;
+            bestMove = { move.first, move.second };
         }
     }
 
     return bestMove;
 }
 
-void AIPlayer::move(Board& board, HWND hWnd) {
-    auto move = ChooseBestMove(board);
-    if (move.first != -1 && move.second != -1) {
-        board.boardState[move.first][move.second] = playerColor;
-        FlipPieces(board, move.first, move.second);
+std::pair<int, int> AIPlayer::ChooseMinimax(const Board& board, std::vector<std::pair<int, int>> validMoves) {
 
-        InvalidateRect(hWnd, NULL, TRUE);
+}
+
+// calculate most pieces for each valid move
+void AIPlayer::move(Board& board, HWND hWnd, Difficulty difficulty) {
+    auto validMoves = GetValidMoves(board);
+
+    std::pair<int, int> move;
+    switch (difficulty) {
+        case Difficulty::EASY:
+            move = ChooseMostPieces(board, validMoves);
+            break;
+        case Difficulty::MEDIUM:
+            move = ChooseMinimax(board, validMoves);
+            break;
+        case Difficulty::HARD:
+            break;
+    }
+
+    if (move.first != -1 && move.second != -1) {
+        FlipPieces(board, move.first, move.second);
+        InvalidateRect(hWnd, NULL, true);
         UpdateWindow(hWnd);
     }
 }

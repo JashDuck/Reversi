@@ -6,6 +6,7 @@
        C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Microsoft.Common.props(84,119): message : Property 'MSBuildUserExtensionsPath' with value 'C:\Users\joshp\AppData\Local\Microsoft\MSBuild' expanded from the environment.
        Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild
        Trying to import C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\* using extensions path C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild
+       Assembly loaded during Evaluation: Microsoft.IO.Redist, Version=6.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 (location: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\Microsoft.IO.Redist.dll, MVID: cb1d70cb-2531-4fb6-9948-8c7596f06196, AppDomain: [Default])
        C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Imports\Microsoft.Common.props\ImportBefore\Microsoft.NuGet.ImportBefore.props(14,5): message : Property 'VisualStudioVersion' with value '17.0' expanded from the environment.
        The "Configuration" property is a global property, and cannot be modified.
        Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild
@@ -16,6 +17,7 @@
        C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Default.props(218,5): message : Property 'LOCALAPPDATA' with value 'C:\Users\joshp\AppData\Local' expanded from the environment.
        Property reassignment: $(UseDebugLibraries)="true" (previous value: "false") at C:\Users\joshp\OneDrive\Programming\C++\Reversi\Reversi\Reversi.vcxproj (23,5)
        Property reassignment: $(CharacterSet)="Unicode" (previous value: "NotSet") at C:\Users\joshp\OneDrive\Programming\C++\Reversi\Reversi\Reversi.vcxproj (25,5)
+       Assembly loaded during Evaluation: Microsoft.Build.Utilities.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\Microsoft.Build.Utilities.Core.dll, MVID: d3dada43-c2e6-46d8-98a7-d20c6325ad83, AppDomain: [Default])
        C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.ToolsetLocation.props(73,32): message : Property 'PROCESSOR_ARCHITECTURE' with value 'AMD64' expanded from the environment.
        Property reassignment: $(WindowsSdkDir_10)="C:\Program Files (x86)\Windows Kits\10\" (previous value: "") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.WindowsSDK.props (18,5)
        Property reassignment: $(NETFXSDK_Version)="4.8" (previous value: "4.8.1") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.WindowsSDK.props (46,5)
@@ -745,6 +747,7 @@
              AfterRebuild;
            ;
            ") at C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets (540,5)
+       Assembly loaded during Evaluation: System.Collections.Immutable, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\System.Collections.Immutable.dll, MVID: 8448ed54-b238-40d8-a464-bff29b2d85b9, AppDomain: [Default])
        Overriding target "GenerateTargetFrameworkMonikerAttribute" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "GenerateTargetFrameworkMonikerAttribute" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets".
        Overriding target "Build" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "Build" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets".
        Overriding target "Rebuild" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "Rebuild" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets".
@@ -785,7 +788,7 @@
        Overriding target "GetTargetPathWithTargetPlatformMoniker" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "GetTargetPathWithTargetPlatformMoniker" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets".
        The target "CompileDesignTime" listed in a BeforeTargets attribute at "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets (44,11)" does not exist in the project, and will be ignored.
        The target "CompileDesignTime" listed in a BeforeTargets attribute at "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets (57,11)" does not exist in the project, and will be ignored.
-Build started 4/5/2025 12:14:40 AM.
+Build started 4/6/2025 10:59:38 PM.
 Logging verbosity is set to: Detailed.     1>Project "C:\Users\joshp\OneDrive\Programming\C++\Reversi\Reversi\Reversi.vcxproj" on node 2 (Build target(s)).
      1>Target "EnableIntermediateOutputPathMismatchWarning" skipped, due to false condition; ('$(RestoreProjectStyle)' == 'PackageReference') was evaluated as ('' == 'PackageReference').
      1>Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\joshp\OneDrive\Programming\C++\Reversi\Reversi\Reversi.vcxproj" (target "SetTelemetryEnvironmentVariables" depends on it):
@@ -811,10 +814,10 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\joshp\OneDrive\Pr
      1>Target "SetTelemetryEnvironmentVariables" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets" from project "C:\Users\joshp\OneDrive\Programming\C++\Reversi\Reversi\Reversi.vcxproj" (target "Build" depends on it):
        Using "SetEnv" task from assembly "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
        Task "SetEnv"
-         VSTEL_SolutionSessionID={FCCECC78-FA33-4554-A1D8-358B04EEEF9B}
+         VSTEL_SolutionSessionID={B0E8CC4F-59DD-4E32-865D-B299CF075262}
        Done executing task "SetEnv".
        Task "SetEnv"
-         VSTEL_CurrentSolutionBuildID=1938843962
+         VSTEL_CurrentSolutionBuildID=3057444040
        Done executing task "SetEnv".
        Task "SetEnv"
          VSTEL_ProjectID={9fd700e6-4421-46e0-a8fe-15f76385f35c}
@@ -1002,6 +1005,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\joshp\OneDrive\Pr
        Done executing task "WriteLinesToFile".
        Using "Touch" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "Touch"
+         Creating "C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Reversi\Intermediate\Debug\Reversi.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
          Touching "C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Reversi\Intermediate\Debug\Reversi.tlog\unsuccessfulbuild".
        Done executing task "Touch".
      1>Done building target "InitializeBuildStatus" in project "Reversi.vcxproj".
@@ -1140,19 +1144,19 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\joshp\OneDrive\Pr
          	C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\INTERMEDIATE\DEBUG\BOARD.OBJ
          	C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\INTERMEDIATE\DEBUG\PLAYER.OBJ
          	C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\INTERMEDIATE\DEBUG\WINMAIN.OBJ
-         Source\AIPlayer.cpp will be compiled because C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\SOURCE\BOARD.H was modified at 4/5/2025 12:14:29 AM.
-         Source\Board.cpp will be compiled because C:\Users\joshp\OneDrive\Programming\C++\Reversi\Reversi\Source\Board.cpp was modified at 4/5/2025 12:14:37 AM.
-         Source\Player.cpp will be compiled because C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\SOURCE\BOARD.H was modified at 4/5/2025 12:14:29 AM.
-         Source\WinMain.cpp will be compiled because it was not found in the tracking log.
+         Source\AIPlayer.cpp will be compiled because C:\Users\joshp\OneDrive\Programming\C++\Reversi\Reversi\Source\AIPlayer.cpp was modified at 4/6/2025 10:59:37 PM.
+         Source\Board.cpp will be compiled because C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\SOURCE\PCH.H was modified at 4/6/2025 10:20:46 PM.
+         Source\Player.cpp will be compiled because C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\SOURCE\PCH.H was modified at 4/6/2025 10:20:46 PM.
+         Source\WinMain.cpp will be compiled because C:\Users\joshp\OneDrive\Programming\C++\Reversi\Reversi\Source\WinMain.cpp was modified at 4/6/2025 10:32:00 PM.
          No output for C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\SOURCE\AIPLAYER.CPP|C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\SOURCE\BOARD.CPP|C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\SOURCE\PLAYER.CPP|C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\SOURCE\WINMAIN.CPP was found in the tracking log; source compilation required.
          Write Tracking Logs:
          	C:\Users\joshp\OneDrive\Programming\C++\Reversi\Reversi\Intermediate\Debug\Reversi.tlog\CL.write.1.tlog
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=2736
-           SARIF_OUTPUT_PIPE=2936
+           VS_UNICODE_OUTPUT=1472
+           SARIF_OUTPUT_PIPE=1604
          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\bin\HostX64\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++20 /permissive- /Fo"C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Reversi\Intermediate\Debug\\" /Fd"C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Reversi\Intermediate\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt Source\AIPlayer.cpp Source\Board.cpp Source\Player.cpp Source\WinMain.cpp
          Tracking command:
-         C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\joshp\OneDrive\Programming\C++\Reversi\Reversi\Intermediate\Debug\Reversi.tlog /r "C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\SOURCE\AIPLAYER.CPP|C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\SOURCE\BOARD.CPP|C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\SOURCE\PLAYER.CPP|C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\SOURCE\WINMAIN.CPP" /b MSBuildConsole_CancelEvent4ca99ba5d0154e1f89bf65a31d336f54  /c "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\bin\HostX64\x64\CL.exe"  /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++20 /permissive- /Fo"C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Reversi\Intermediate\Debug\\" /Fd"C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Reversi\Intermediate\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt Source\AIPlayer.cpp Source\Board.cpp Source\Player.cpp Source\WinMain.cpp
+         C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\joshp\OneDrive\Programming\C++\Reversi\Reversi\Intermediate\Debug\Reversi.tlog /r "C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\SOURCE\AIPLAYER.CPP|C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\SOURCE\BOARD.CPP|C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\SOURCE\PLAYER.CPP|C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\SOURCE\WINMAIN.CPP" /b MSBuildConsole_CancelEvent4e45fac0d62e4038b08b8edb39a16e1e  /c "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\bin\HostX64\x64\CL.exe"  /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++20 /permissive- /Fo"C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Reversi\Intermediate\Debug\\" /Fd"C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Reversi\Intermediate\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt Source\AIPlayer.cpp Source\Board.cpp Source\Player.cpp Source\WinMain.cpp
          AIPlayer.cpp
          Board.cpp
      1>C:\Users\joshp\OneDrive\Programming\C++\Reversi\Reversi\Source\Board.cpp(90,17): warning C4101: 'ps': unreferenced local variable
@@ -1184,16 +1188,16 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\joshp\OneDrive\Pr
      1>Target "ResourceCompile" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\joshp\OneDrive\Programming\C++\Reversi\Reversi\Reversi.vcxproj" (target "_ResourceCompile" depends on it):
        Using "RC" task from assembly "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
        Task "RC"
-         Using cached output dependency table built from:
+         Write Tracking Logs:
          	C:\Users\joshp\OneDrive\Programming\C++\Reversi\Reversi\Intermediate\Debug\Reversi.tlog\rc.write.1.tlog
-         Using cached input dependency table built from:
+         Read Tracking Logs:
          	C:\Users\joshp\OneDrive\Programming\C++\Reversi\Reversi\Intermediate\Debug\Reversi.tlog\rc.read.1.tlog
          Outputs for C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\REVERSI.RC:
          	C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\INTERMEDIATE\DEBUG\REVERSI.RES
-         Reversi.rc will be compiled because C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\REVERSI.RC was modified at 4/5/2025 12:13:45 AM.
+         Reversi.rc will be compiled because C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\REVERSI.RC was modified at 4/6/2025 10:29:27 PM.
          C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Reversi\Intermediate\Debug\Reversi.res" Reversi.rc 
          Tracking command:
-         C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\joshp\OneDrive\Programming\C++\Reversi\Reversi\Intermediate\Debug\Reversi.tlog /r C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\REVERSI.RC /b MSBuildConsole_CancelEventfc82786043c34110a3d0036b65f0e7d6  /c "C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64\rc.exe"  /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Reversi\Intermediate\Debug\Reversi.res" Reversi.rc 
+         C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\joshp\OneDrive\Programming\C++\Reversi\Reversi\Intermediate\Debug\Reversi.tlog /r C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\REVERSI.RC /b MSBuildConsole_CancelEvent1c615136272e4973aafdef41c327ebc4  /c "C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64\rc.exe"  /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Reversi\Intermediate\Debug\Reversi.res" Reversi.rc 
        Done executing task "RC".
      1>Done building target "ResourceCompile" in project "Reversi.vcxproj".
      1>Target "AfterResourceCompile" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\joshp\OneDrive\Programming\C++\Reversi\Reversi\Reversi.vcxproj" (target "_ResourceCompile" depends on it):
@@ -1327,14 +1331,14 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\joshp\OneDrive\Pr
          	C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\INTERMEDIATE\DEBUG\VC143.PDB
          Source compilation required: input C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\INTERMEDIATE\DEBUG\REVERSI.RES is newer than output C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\BUILD\REVERSI\DEBUG\REVERSI.PDB.
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=2996
+           VS_UNICODE_OUTPUT=1492
          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Build\Reversi\Debug\Reversi.exe" /INCREMENTAL /ILK:"C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Reversi\Intermediate\Debug\Reversi.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Build\Reversi\Debug\Reversi.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Build\Reversi\Debug\Reversi.lib" /MACHINE:X64 C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Reversi\Intermediate\Debug\Reversi.res
          C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Reversi\Intermediate\Debug\AIPlayer.obj
          C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Reversi\Intermediate\Debug\Board.obj
          C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Reversi\Intermediate\Debug\Player.obj
          C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Reversi\Intermediate\Debug\WinMain.obj
          Tracking command:
-         C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\joshp\OneDrive\Programming\C++\Reversi\Reversi\Intermediate\Debug\Reversi.tlog /r "C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\INTERMEDIATE\DEBUG\AIPLAYER.OBJ|C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\INTERMEDIATE\DEBUG\BOARD.OBJ|C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\INTERMEDIATE\DEBUG\PLAYER.OBJ|C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\INTERMEDIATE\DEBUG\REVERSI.RES|C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\INTERMEDIATE\DEBUG\WINMAIN.OBJ" /b MSBuildConsole_CancelEvent4c778112f8484b0e888360d650ab6990  /c "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\bin\HostX64\x64\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Build\Reversi\Debug\Reversi.exe" /INCREMENTAL /ILK:"C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Reversi\Intermediate\Debug\Reversi.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Build\Reversi\Debug\Reversi.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Build\Reversi\Debug\Reversi.lib" /MACHINE:X64 C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Reversi\Intermediate\Debug\Reversi.res
+         C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\joshp\OneDrive\Programming\C++\Reversi\Reversi\Intermediate\Debug\Reversi.tlog /r "C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\INTERMEDIATE\DEBUG\AIPLAYER.OBJ|C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\INTERMEDIATE\DEBUG\BOARD.OBJ|C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\INTERMEDIATE\DEBUG\PLAYER.OBJ|C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\INTERMEDIATE\DEBUG\REVERSI.RES|C:\USERS\JOSHP\ONEDRIVE\PROGRAMMING\C++\REVERSI\REVERSI\INTERMEDIATE\DEBUG\WINMAIN.OBJ" /b MSBuildConsole_CancelEvent0384cb9cc82f49b39bdf31d899699d94  /c "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\bin\HostX64\x64\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Build\Reversi\Debug\Reversi.exe" /INCREMENTAL /ILK:"C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Reversi\Intermediate\Debug\Reversi.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Build\Reversi\Debug\Reversi.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Build\Reversi\Debug\Reversi.lib" /MACHINE:X64 C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Reversi\Intermediate\Debug\Reversi.res
          C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Reversi\Intermediate\Debug\AIPlayer.obj
          C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Reversi\Intermediate\Debug\Board.obj
          C:\Users\joshp\OneDrive\Programming\C++\Reversi\\Reversi\Intermediate\Debug\Player.obj
@@ -1564,4 +1568,4 @@ Build succeeded.
     1 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:06.94
+Time Elapsed 00:00:07.11

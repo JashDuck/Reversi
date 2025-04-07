@@ -12,6 +12,7 @@ public:
 	bool MouseHandler(Board& board, HWND hWnd, RECT clientRect, int x, int y);
 
 	bool HasValidMove(const Board& board) const;
+	std::vector<std::pair<int, int>> GetValidMoves(const Board& board);
 
 	bool ValidCell(const Board& board, int x, int y) const;
 	void FlipPieces(Board& board, int x, int y);

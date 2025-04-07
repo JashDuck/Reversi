@@ -27,10 +27,12 @@ private:
     HICON     hIcon;
     Board     board;
 
-    bool gameOver = false;
-    bool player1Turn = true;
+    bool resetInProgress = false;
+    std::chrono::steady_clock::time_point lastResetTime;
 
+    bool player1Turn = true;
     bool singlePlayer = true;
+    Difficulty difficulty = Difficulty::EASY;
 };
 
 inline Player player1(BoardValue::BLACK);
